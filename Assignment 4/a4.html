@@ -9,6 +9,22 @@
 		<title> Zergling </title>
 		
 		<style>
+			
+			@font-face
+			{
+				font-family: ubuntu;
+				src: url("Ubuntu-R.ttf");
+			}
+			@font-face
+			{
+				font-family: ubuntu-bold;
+				src: url("Ubuntu-B.ttf");
+			}
+			@font-face
+			{
+				font-family: ubuntu-medium;
+				src: url("Ubuntu-M.ttf");
+			}
 		
 			body
 			{
@@ -16,19 +32,73 @@
 				background-repeat: no-repeat;
 				background-attachment: fixed;
 				background-size: 100%;
+				font-family: ubuntu-medium;
+				font-size: 20px;
+			}
+			
+			h2
+			{
+				font-family: ubuntu-bold;
+				font-size: 32px;
 			}
 			
 			div
 			{
+				position: absolute;
 				background-color: rgba(171, 141, 186, 0.7);
 				border: 8px solid #4E038D;
 				border-radius: 16px;
-				box-shadow: 0px 0px 10px #2D0A4B;
+				box-shadow: 0px 0px 4px 4px rgba(171, 141, 186, 0.7);
 			}
+			
 			.d1
 			{
 				width: 500px;
-				height: 400px;
+				height: 325px;
+				margin-top: 100px;
+				margin-left: 275px;
+			}
+			#h1
+			{
+				position: absolute;
+				margin: 30px;
+				margin-top: 30px;
+				text-shadow: 1px 1px 2px 1px #2D0A4B;
+			}
+			#p1
+			{
+				margin: 30px;
+				margin-top: 100px;
+			}
+			#logo
+			{
+				position: relative;
+				float: right;
+				margin-top: 12px;
+				margin-right: 20px;
+				width: 175px;
+			}
+			
+			.d2
+			{
+				width: 250px;
+				height: 250px;
+				margin-top: 100px;
+				margin-left: 825px;
+				text-align: center;
+			}
+			#ling1
+			{
+				margin-left: -8px;
+				margin-top: -8px;
+				width: 250px;
+				border: 8px solid #4E038D;
+				border-radius: 16px;
+			}
+			#p2
+			{
+				margin-top: 5px;
+				font-size: 18px;
 			}
 		
 		</style>
@@ -39,13 +109,25 @@
 	
 		<div class = "d1">
 
-			<h2> The Zergling </h2>
+			<h2 id = "h1"> The Zergling </h2>
 			
-			<img src = "zergIcon.png">
+			<img id = "logo" src = "zergIcon.png">
 			
-			<p>
+			<p id = "p1">
 			
-				
+				The Zergling is a small and fast melee attacker and the backbone of the Zerg army. Individual Zerglings are weak, but large groups can surround and terrorize enemy ground forces. In such groups, they soak a lot of incoming damage and provide a shield for more expensive units.
+			
+			</p>
+		
+		</div>
+		
+		<div class = "d2">
+		
+			<img id = "ling1" src = "zergling.png">
+			
+			<p id = "p2">
+			
+				A <b> Zergling </b>
 			
 			</p>
 		
